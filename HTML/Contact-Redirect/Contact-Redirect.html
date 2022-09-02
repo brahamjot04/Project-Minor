@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Response Submitted!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <style>
+        body{
+            background-color: rgba(0, 0, 0, 0);
+        }
+
+        .container{
+            background-color: rgba(0, 0, 0, 0);
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            margin-top: 35vh; 
+        }
+
+        p{
+            text-align: center;
+            color: white;
+            background-color: rgba(0, 0, 0, 0);
+        }
+
+        .success {
+            position: left;
+            margin-left: 40rem;
+            background-color: rgba(238, 255, 0, 0.089);
+            border-radius: 100%;
+        }
+
+        img {
+            height: 4rem;
+            width: 4rem;
+        }
+
+        #submitted {
+            font-size: 2rem;
+        }
+
+        #response {
+            margin-top: -1rem;
+            font-size: 1rem;
+        }
+
+        video {
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+        }
+
+        .back_video{
+            min-width: 100%;
+            min-height: 100%;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;                         
+        }
+    </style>
+</head>
+<body>
+    <div class="main_container">
+        <video autoplay muted loop plays-inline class="back-video">
+            <source src="Background-Video.mp4" type="video/mp4">
+            Your Browser does not support the video tag
+        </video>
+    </div>
+    <div class="container">
+        <p id="submitted">Thank You for getting in touch!</p>
+        <p id="response">One of the Bakeology Officials will get back in touch with you soon!</p>
+    </div>
+    <a href="../index.html" class="success"><img src="Success-Tick.png" alt="Success"></a>
+</body>
+</html>

@@ -1,0 +1,466 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Bakeology</title>
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Edu+VIC+WA+NT+Beginner&family=Raleway&family=Ubuntu:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Great+Vibes&family=Lobster&family=Montserrat:wght@200;300&family=Quicksand:wght@300&family=Satisfy&display=swap');
+    </style>
+    <link rel="stylesheet" href="../Footer/Footer.css">
+    <link href="../Footer/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap%27');
+    </style>
+    <link rel="icon" type="image/png" sizes="32x32" href="../Bakery_all_images/Favicon.png">
+
+    <script type="text/javascript">
+        function validateForm() {
+        if (frm.Full_Name.value == "") {
+            alert('Full Name is required!');
+            return false;
+        }
+        if (frm.Email_Address.value == "") {
+            alert('Email Address is required!');
+            return false;
+        }
+        if (frm.Email_Address.value.indexOf("@") < 1 || frm.Email_Address.value.indexOf(".") < 1) {
+            alert('Please enter a valid email address!');
+            return false;
+        }
+        if (frm.Message.value == "") {
+            alert('MESSAGE is required!');
+            return false;
+        }
+        return true;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="scrollbar">
+        <div class="force-overflow"></div>
+    </div>
+    <header>
+        <div class="header_container">
+            <div class="logo">
+                <a class="index-logo" href="../HTML/index.html">
+                    <p>Bakeology</p>
+                </a>
+            </div>
+            <div class="menubar">
+                <nav>
+                    <ul>
+                        <a href="../../HTML/Blogs/Blogs.html">
+                            <li class="blogs">Blogs</li>
+                        </a>
+                        <a href="../HTML/Products.html">
+                            <li class="products">Products</li>
+                        </a>
+                        <a href="../HTML/Our Breads.html">
+                            <li class="Our_Breads">Our Breads</li>
+                        </a>
+                        <a href="../Jobs/Jobs.html">
+                            <li class="Jobs">Jobs</li>
+                        </a>
+                        <a href="#ContactUs">
+                            <li class="contact">Contact Us</li>
+                        </a>
+                    </ul>
+                </nav>
+
+            </div>
+            <div id="searchOverlay" class="block active">
+                <div class="centered">
+                    <div id="search-box">
+                        <i id="close-btn" class="fa-solid fa-xmark" onclick="closeSearch()">
+                        </i>
+                        <form action="https://www.google.com/search" method="get" id="search-form">
+                            <div class="Search-Bar" id="Search-Bar">
+                                <input type="search" name="query" placeholder="What are you looking for?" id="Bars"
+                                    onclick="openSearch2()">
+                                <button id="search-button" type="submit">
+                                    <span>Search</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="search_container" id="abc">
+                <a href="#" onclick="openSearch()"><i id="search-btn" class="fa fa-magnifying-glass"></i></a>
+            </div>
+
+            <div class="icon_log-in">
+                <a href="../Login/Login.html">Log In</a>
+            </div>
+            <div class="icon_sign-up">
+                <a href="../Signup/Signup.html">Sign Up</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main_container">
+            <div class="content_related_name">
+                <p id="bakery_bold">Bakery</p>
+            </div>
+            <div class="index_content">
+                <img id="index_bakery" src="../Bakery_all_images/index_img.png" alt="index image">
+            </div>
+            <div class="right_index">
+                <div class="index_chef">
+                    <img id="chef" src="../Bakery_all_images/index_chef.png" alt="chef image">
+                </div>
+                <div class="index_content2">
+                    <div class="content1">
+                        <p>Baked</p>
+                    </div>
+                    <div class="content2">
+                        <p> with Love</p>
+                    </div>
+                    <div class="content3">
+                        <p>Delight your senses with wholesome <br> taste & authentic flavours of our freshly <br> baked
+                            assorted breads</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about_main">
+            <h1 id="about_heading">About Us</h1>
+            <div class="about_container">
+                <div class="About Us">
+                    <p id="about_content">
+
+                        <b> BAKEOLOGY </b>is your sweet dreams destination, guaranteed to bring out the KID in you. see
+                        what we did there?
+                        <br>
+                        <b> BAKEOLOGY </b>is your go-to bakery and special occasion sweets shop, and is a place where
+                        our team carries out goatland's tradition of showcasing the love of fun flavor combinations.
+                        From the harmonious union between a mixes of cereals flours and legumes flours, a new line of
+                        tasty specialitiesrich in fiber and vegetable proteins in born.
+                        <br>
+                        Enjoy your fondest food memories turned into tasty dessert experiences and continue to make more
+                        memories enjoying sweets with friends and family!
+                        <br>
+                        We've got everything from "simple to silly" flavors whether you just want delicious fresh baked
+                        chocolate chip cookies, a fun and interesting cake that tastes like fries dipped into a
+                        chocolate shake, or want us to take a stab at concocting your dream dessert —we got you!
+                        <br>
+                        Taking personal, crave-able memories and creating fun experiential treats is our specialty.
+                        Celebrate sweet moments in life or just treat yourself to the everyday fun you deserve!
+                    </p>
+                    <span class="apply_button_container">
+                        <a href="../Jobs/Jobs.html"> <button class="apply_button" type="button">Apply Us</button> </a>
+                    </span>
+                </div>
+            </div>
+            <div class="about_image">
+                <img id="about_img" src="../Bakery_all_images/bakery3.jpg" alt="about image">
+            </div>
+        </div>
+
+        <h1 id="about_heading">Our Testimonials</h1>
+        <div class="flip-card-block">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="../Bakery_all_images/testimonials1.jpg" alt="Vinod Malhotra"
+                            style="width:30rem; height: 40rem;">
+                    </div>
+                    <div class="flip-card-back">
+                        <p id="ceo_name"><b> Vinod Malhotra </b></p>
+                        <p id="profession"><b>CEO</b></p>
+                        <p id="from"><b> of Bakeology </b></p>
+                        <p id="about_work1">India’s Largest Artisan Bakery <br>
+                        Brand | McKinsey Alum | IIMA | UDCT</p>
+                        <p id="address"><i> Delhi NCR, India </i></p>
+                        <p id="connection">500+ connections</p>
+                        <p id="about_work">The Bakeology is a neighbourhood Artisan Bakery, which offers an exquisite variety of international baked goodies. The central idea behind our concept is to serve extremely high quality, freshly baked, authentic European breads Canadian Bread and bakery
+                        products. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card2">
+                <div class="flip-card2-inner">
+                    <div class="flip-card2-front">
+                        <img src="../Bakery_all_images/testimonials2.jpg" alt="Vinod Malhotra"
+                            style="width:30rem; height: 40rem;">
+                    </div>
+                    <div class="flip-card2-back">
+                        <p id="ceo_name"><b>Chris William</b></p>
+                        <p id="profession"><b>Partner,Investor</b></p>
+                        <p id="from"><b> of Bakeology </b></p>
+                        <p id="about_work1">India’s Largest Artisan Bakery <br>
+                        Brand | McKinsey Alum | IIMA | UDCT</p>
+                        <p id="address"><i> Delhi NCR, India </i></p>
+                        <p id="connection">2500+ connections</p>
+                        <p id="about_work">He is business partner in Bakeology that plays a significant role in owning, managing a company.Chris William provides capital to a business with the expectation of a future financial return.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="chef_container">
+            <div class="chef_heading"><p>Our Chef</p></div>
+            <div class="chef1">
+                <div class="chef_content1">
+                    Earning a certification from Baking school in Delhi can help her to  make a positive impression on future plans for demonstrating our successive life. She have knowledge and abilities to work in a bakery. <br>
+                    She specialise in handcrafting and shaping bread on a small scale, often by hand, using onlyconventional bread components such as flour, water, yeast, and salt. <br> Her pricious words-The practice of fine-tuning your culinary expertise will continue for the rest of your career. Always be on the lookout for fresh methods to improve your recipes or new approaches to
+                    use. Of course, creativity and vision will provide you the tools you need to become a great baker who can advance and thrive in the future.
+                    It’s always better to work as an apprentice or as a baker’s assistant to get experience.
+                </div>
+                <div class="chef_img1">
+                    <img id="chef_img1" src="../Bakery_all_images/female.png" alt="chef image">
+                </div>
+            </div>
+            <div class="chef2">
+                <div class="chef_img2">
+                    <img id="chef_img2" src="../Bakery_all_images/malechef2.png" alt="chef image">
+                </div>
+                <div class="chef_content2">He is a Decorators can add the finishing touches to a cake’s appearance with frosting and other accents, which are frequently ordered for special events. <br> He is specialise in pies and employ comparable culinary techniques for fillings and crusts. <br>Their team create their own bakeries to have complete control over aspects such as the menu and store hours. <br>These bakers specialise in handcrafting and shaping bread on a small scale, often by hand, using only conventional bread components such as flour, water, yeast, and salt. <br>He is also a Pastry chefs, often known as patissiers, operate in a professional kitchen and are often in charge of the dessert menu. They frequently create and select recipes, as well as supervise
+                all aspects of the pastry kitchen. <br>Always excited about the goodness of food, both in nutrients and taste, Chef volunteers his time in cooking dinner at local food banks. He also supports the National MS Society</div>
+            </div>
+            <div class="chef3">
+                <div class="chef_content3">Chef Julio Gomez has always loved the culinary arts, a talent he inherited from his family, who already succeeded in the Bakery  business. <br> While Chef Julio initially went to college for business, he quickly decided that he had to pursue what he was naturally gifted at. He knew the work would be hard, but he felt he couldn’t lose — he knew his daughter Shelly, his “North Star,” was depending on him <br>Chef Julio has worked at many fine bakery shops, including Spago and Eleven Madison Park. He has also made several media appearances as an expert chef, including Michael Colameco’s “Real Food” and WNBC New York. 
+                </div>
+                <div class="chef_img3">
+                    <img id="chef_img3" src="../Bakery_all_images/index_chef.png" alt="chef image">
+                </div>
+            </div>
+        </div>
+
+        <span class="product_heading">About Our Products</span>
+        <div class="food_specifity1">
+            <div class="spec1_img">
+                <img id="spec-hover" src="../Bakery_all_images/fresh_bread.jpg" alt=" fresh bread image">
+            </div>
+            <div class="spec1_img">
+                <img id="spec-hover" src="../Bakery_all_images/delicious.jpg" alt="delicious image">
+            </div>
+            <div class="spec1_img">
+                <img id="spec-hover" src="../Bakery_all_images/refreshing2.jpg" alt="refreshing image">
+            </div>
+            <div class="spec1_img">
+                <img id="spec-hover" src="../Bakery_all_images/tasty.jpg" alt="tasty image">
+            </div>
+            <div class="spec1_content">
+                <h2><b>Fresh</b></h2>
+                <p>
+                    I have always been delighted at the prospect of a new day, a fresh try, one more start, with perhaps
+                    a bit of magic waiting somewhere behind the morning. <br>
+                </p>
+                <p id="author"><b>-<u> J.B. Priestley</u></b></p>
+            </div>
+            <div class="spec1_content">
+                <h2>Delicious</h2>
+                <p>
+                    Every time you use the word 'healthy,' you lose. The key is to make yummy, delicious food that
+                    happens to be healthy.<br>
+                </p>
+                <p id="author"><b>-<u> Marcus Samuelsson</u></b></p>
+            </div>
+            <div class="spec1_content">
+                <h2>Refreshing</h2>
+                <p>
+                    Periodically, I return to the classics for inspiration and refreshment.<br>
+                </p>
+                <p id="author"><b>-<u> Cecilia Dart Thornton</u></b></p>
+            </div>
+            <div class="spec1_content">
+                <h2>Tasty</h2>
+                <p>
+                    The best way to celebrate the holidays is with some delicious food.<br>
+                </p>
+                <p id="author"><b>-<u> Rachel Hollis</u></b></p>
+            </div>
+        </div>
+        <div class="video_heading">Our Video Gallery</div>
+        <div class="video_gallery">
+            
+            <div class="video1">
+                <video src="../our video/chocolate craving.mp4" poster="../our video/poster1.jpg" muted controls></video>
+            </div>
+            <div class="video2">
+                <video src="../our video/chocolate banana bread.mp4" poster="../our video/poster2.jpg" muted controls></video>
+            </div>
+            <div class="video3">
+                <video src="../our video/chessy bread.mp4" poster="../our video/poster3.jpg" muted controls></video>
+            </div>
+            <div class="video4">
+                <video src="../our video/brownie.mp4" poster="../our video/poster4.jpg" muted controls></video>
+            </div>
+        </div>
+
+        <div id="ContactUs" class="contact_container">
+            <div class="contact_header">
+                <div class="contact_heading">Contact Us</div>
+                <div class="contact_description">
+                    <p>Get in touch via the contact details below and we’ll get back to you ASAP.</p>
+                </div>
+            </div>
+            <div class="contact_image">
+                <img id="contact_img" src="../Bakery_all_images/contact.jpg" alt="contact image">
+            </div>
+            <div class="contact_block">
+                <form action="get" method="get">
+                    <input type="text" id="Name" name="Full_Name" placeholder="FULL NAME"><br>
+                    <input type="email" id="email" name="Email_Address" placeholder="YOUR EMAIL ADDRESS"><br>
+                    <div class="checkbox_container">
+                        <input type="checkbox" id="box-1">
+                        <label for="box-1" id="accept">Don't miss out! Tick this box to receive exclusive offers, <br>
+                            news and updates via email.</label>
+                        <textarea name="msg" id="msg" cols="50" rows="10"
+                            placeholder="ENTER YOUR MESSAGE" name="Message"></textarea><br><br>
+                        <div class="contact_submit">
+                            <input type="submit" id="submit_btn" value="SUBMIT">
+                        <!-- <button type="button" id="submit">SUBMIT</button> -->
+                        <div style="float:left; font-size: .1px;"><a href="https://www.100forms.com" id="lnk100" title="form to email">form to email</a></div>
+                        <script src="https://www.100forms.com/js/FORMKEY:NLSLFBUF9CXJ/"></script>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <div class="pg-footer">
+        <footer class="footer">
+            <svg class="footer-wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100"
+                preserveAspectRatio="none">
+                <path class="footer-wave-path"
+                    d="M851.8,100c125,0,288.3-45,348.2-64V0H0v44c3.7-1,7.3-1.9,11-2.9C80.7,22,151.7,10.8,223.5,6.3C276.7,2.9,330,4,383,9.8 c52.2,5.7,103.3,16.2,153.4,32.8C623.9,71.3,726.8,100,851.8,100z">
+                </path>
+            </svg>
+            <div class="footer-content">
+                <div class="footer-content-column">
+                    <div class="footer-logo">
+                        <a class="footer-logo-link" href="../HTML/index.html">
+                            <span class="hidden-link-text"></span>
+                            <h1> Bakeology </h1>
+                        </a>
+                    </div>
+                    <div class="footer-menu">
+                        <div class="star-rating">
+                            <form>
+                                <fieldset class="rating">
+                                    <legend>Rate Our Products:</legend>
+                                    <input type="radio" id="no-rate" class="input-no-rate" name="rating" value="0"
+                                        checked="" aria-label="No rating.">
+
+                                    <input type="radio" id="rate1" name="rating" value="1">
+                                    <label for="rate1">1 star</label>
+
+                                    <input type="radio" id="rate2" name="rating" value="2">
+                                    <label for="rate2">2 stars</label>
+
+                                    <input type="radio" id="rate3" name="rating" value="3">
+                                    <label for="rate3">3 stars</label>
+
+                                    <input type="radio" id="rate4" name="rating" value="4">
+                                    <label for="rate4">4 stars</label>
+
+                                    <input type="radio" id="rate5" name="rating" value="5">
+                                    <label for="rate5">5 stars</label>
+
+                                    <span class="focus-ring"></span>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-content-column">
+                    <div class="footer-menu">
+                        <h2 class="footer-menu-name">
+                            <div class="quick_links"> Quick Links </div>
+                        </h2>
+                        <ul id="menu-company" class="footer-menu-list">
+                            <li id="menu-item-168092"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-168092">
+                                <a target="_blank" rel="noopener noreferrer" href="../../HTML/Blogs/Blogs.html">Blogs</a>
+                            </li>
+                            <li id="menu-item-167418"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-167418">
+                                <a target="_blank" rel="noopener noreferrer" href="../HTML/Products.html">Products</a>
+                            </li>
+                            <li id="menu-item-167954"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-167954">
+                                <a href="../HTML/Our Breads.html">Our Breads</a>
+                            </li>
+                            <li id="menu-item-167423"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-167423">
+                                <a href="../Jobs/Jobs.html">Jobs</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <br><br><br>
+                    <div class="footer-menu">
+                        <h2 class="footer-menu-name">Social Links</h2>
+                        <ul id="menu-company" class="footer-menu-list">
+                            <div class="social-links">
+                                <li><a href="https://twitter.com/bakeology?lang=en" class="twitter"><i
+                                            class="bi bi-twitter"></i></a>
+                                <li><a href="https://www.facebook.com/Bakeology-2158833367716618/" class="facebook"><i
+                                            class="bi bi-facebook"></i></a>
+                                <li><a href="https://www.instagram.com/bakeology/?hl=en" class="instagram"><i
+                                            class="bi bi-instagram"></i></a>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-content-column">
+                    <div class="footer-call-to-action">
+                        <h2 class="footer-call-to-action-title">
+                            <div class="contact_us"> Let's Chat </div>
+                        </h2>
+                        <p class="footer-call-to-action-description"> Have a support question? Need to talk to legal?
+                            Have a great minestrone soup recipe? Whatever the reason you need to chat, let us know and
+                            we'll give you a call.</p>
+                        <a class="footer-call-to-action-button button" href="#ContactUs"> Get in Touch </a>
+                    </div>
+                    <div class="footer-call-to-action">
+                        <h2 class="footer-call-to-action-title"> You Call Us</h2>
+                        <p class="footer-call-to-action-link-wrapper"> <a class="footer-call-to-action-link"
+                                href="tel: +1(250)590-6455" target="_self"> +1(250)590-6455 </a></p>
+                    </div>
+                </div>
+                <div class="footer-content-column">
+                    <div class="footer-menu">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d168732.51024196812!2d-123.43707483741844!3d48.50182374719272!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9ae283cd6f84ed52!2sBakeology%20Cafe!5e0!3m2!1sen!2sin!4v1661238095269!5m2!1sen!2sin"
+                            width="300" height="300" style="border:0; border-radius: 1rem;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="footer-copyright-wrapper">
+                    <p class="footer-copyright-text">
+                        <a class="footer-copyright-link" href="#" target="_self"> ©2022 | Bakeology | All rights
+                            reserved.</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short" id="drop_icon"></i></a>
+            <script src="Blogs/assets/js/main.js"></script>
+
+    <script>
+        function openSearch() {
+            document.getElementById("searchOverlay").style.display = "block";
+        }
+        function closeSearch() {
+            document.getElementById("searchOverlay").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

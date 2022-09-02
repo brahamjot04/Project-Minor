@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakeology-Jobs</title>
+    <link rel="stylesheet" href="Jobs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../Bakery_all_images/Favicon.png">
+    <style>
+        .header {
+            width: 14rem;
+            height: 3rem;
+            border: .2rem solid orange;
+            border-radius: 2rem;
+            background-color: rgb(255, 224, 183);
+        }
+        .home {
+            font-size: 1.7rem;
+            font-weight: 700;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(255, 147, 6);
+            text-align: center;
+        }
+        .header a{
+            text-decoration: none;
+            color: rgb(255, 147, 6);
+            cursor: pointer;
+        }
+        .header:hover{
+            background-color: rgb(253, 211, 155);
+            transition: all .1s ease;
+            box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.349);
+        }
+        .header:active{
+            background-color: rgb(250, 193, 118);
+            color: rgb(240, 137, 3);
+            transition: all .1s ease;
+            box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.431);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <a href="../HTML/index.html">
+            <div class="home">GO TO HOME</div></a>
+    </div>
+    <form action="//submit.form" id="EmploymentApplication100" method="post" onsubmit="return ValidateForm(this);">
+        <!-- JavaScript -->
+        <script type="text/javascript">
+            function ValidateForm(frm) {
+                if (frm.First_Name.value == "") {
+                    alert('First name is required.');
+                    frm.First_Name.focus();
+                    return false;
+                }
+                if (frm.Last_Name.value == "") {
+                    alert('Last name is required.');
+                    frm.Last_Name.focus();
+                    return false;
+                }
+                if (frm.Email_Address.value == "") {
+                    alert('Email address is required.');
+                    frm.Email_Address.focus();
+                    return false;
+                }
+                if (frm.Email_Address.value.indexOf("@") < 1 || frm.Email_Address.value.indexOf(".") < 1) {
+                    alert('Please enter a valid email address.');
+                    frm.Email_Address.focus();
+                    return false;
+                }
+                if (frm.Job_Role.value == "") {
+                    alert('Job Role is required!');
+                    frm.Position.focus();
+                    return false;
+                }
+                if (frm.Phone.value == "") {
+                    alert('Phone is required.');
+                    frm.Phone.focus();
+                    return false;
+                }
+                if (frm.Address.value == "") {
+                    alert('Address is required!');
+                    frm.Address.focus();
+                    return false;
+                }
+                if (frm.City.value == "") {
+                    alert('City is required.');
+                    frm.City.focus();
+                    return false;
+                }
+                if (frm.State.value == "") {
+                    alert('State is required.');
+                    frm.State.focus();
+                    return false;
+                }
+                if (frm.Zip_Code.value == "") {
+                    alert('Zip Code is required.');
+                    frm.Zip_Code.focus();
+                    return false;
+                }
+                if (frm.DOB.value == "") {
+                    alert('Date Of Birth is required.');
+                    frm.DOB.focus();
+                    return false;
+                } if (frm.CV.value == "") {
+                    alert('CV is required.');
+                    frm.CV.focus();
+                    return false;
+                }
+                return true;
+            }
+        </script>
+
+        <!-- Main Form -->
+        <div class="main_container">
+            <div class="heading">
+                <h1>JOB APPLICATION</h1>
+            </div>
+            <div class="form_container">
+                <div class="form_control">
+                    <label for="First_Name"></label>
+                    <input type="text" id="fname" name="First_Name" value="" placeholder="ENTER YOUR FIRST NAME">
+                </div>
+                <div class="form_control">
+                    <label for="Last_Name"></label>
+                    <input type="text" id="lname" name="Last_Name" value="" placeholder="ENTER YOUR LAST NAME">
+                </div>
+                <div class="form_control">
+                    <label for="Email_Address"></label>
+                    <input type="email" name="Email_Address" id="email" value="" placeholder="ENTER YOUR EMAIL ADDRESS">
+                </div>
+                <div class="form_control">
+                    <label for="Phone" id="contact"></label>
+                    <input type="text" name="Phone" id="contact" value="" placeholder="ENTER YOUR PHONE NUMBER">
+                </div>
+                <div class="form_control">
+                    <label for="Job_Role" id="job"></label>
+                    <input type="text" name="Job_Role" id="job" value="" placeholder="ENTER YOUR JOB ROLE">
+                </div>
+                <div class="form_control">
+                    <label for="Address" id="address"></label>
+                    <textarea name="Address" id="address" cols="50" rows="10"
+                        placeholder="ENTER  YOUR PERMANENT ADDRESS HERE"></textarea>
+                </div>
+                <div class="form_control">
+                    <label for="City" id="city"></label>
+                    <input type="text" name="City" id="city" value="" placeholder="ENTER YOUR CITY HERE">
+                </div>
+                <div class="form_control">
+                    <label for="State" id="state"></label>
+                    <input type="text" name="State" id="state" value="" placeholder="ENTER YOUR STATE HERE">
+                </div>
+                <div class="form_control">
+                    <label for="Zip_Code" id="pincode"></label>
+                    <input type="text" name="Zip_Code" id="pincode" value="" placeholder="ENTER YOUR ZIP CODE">
+                </div>
+                <div class="form_control">
+                    <label for="DOB" id="date">D.O.B :</label>
+                    <input type="date" name="DOB" id="date" value="" placeholder="ENTER YOUR DATE OF BIRTH">
+                </div>
+                <div class="form_control">
+                    <label for="CV" id="cv">UPLOAD YOUR CV HERE :</label>
+                    <input type="file" name="CV" id="cv" value="" placeholder="UPLOAD YOUR CV">
+                </div>
+            </div>
+            <div class="button_container">
+                <input name="skip_submit" type="submit" value="Apply Now">
+                <div style="float:left; font-size: .1px;"><a href="https://www.100forms.com" id="lnk100"
+                        title="form to email">form to email</a></div>
+                <script src="https://www.100forms.com/js/FORMKEY:3U5J9H5KWTJW/SEND:bakeology2315@gmail.com"></script>
+                <div class="rough"></div>
+
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
